@@ -24,7 +24,7 @@
 	                                IF OBJECT_ID('tempdb..#temp2') IS NOT NULL
 		                                DROP TABLE #temp2
 
-	                                --根据销售出库单找到对应的销售订单FID
+	                                --根据销售出库单找到对应的销售订单FENTRYID
 	                                SELECT DISTINCT e.FENTRYID
 	                                INTO #temp0
 	                                FROM dbo.T_SAL_OUTSTOCK A
