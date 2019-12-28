@@ -15,6 +15,8 @@
             _result = $@"
                             BEGIN
 	                                --收集‘销售订单’的相关记录
+                                    IF OBJECT_ID('tempdb..#temp0') IS NOT NULL
+		                                DROP TABLE #temp0
 	                                IF OBJECT_ID('tempdb..#temp') IS NOT NULL
 		                                DROP TABLE #temp
 	                                IF OBJECT_ID('tempdb..#temp1') IS NOT NULL
